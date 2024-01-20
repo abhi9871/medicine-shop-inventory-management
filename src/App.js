@@ -1,23 +1,16 @@
+import { Fragment } from 'react';
+import Header from './components/Layout/Header';
+import MedicineForm from './components/Medicine/MedicineForm';
+import MedicineAvailable from './components/Medicine/MedicineAvailable';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <MedicineForm />
+      <MedicineAvailable />
+    </Fragment>
   );
 }
 
