@@ -3,7 +3,7 @@ import React from 'react';
 import HeaderCartButton from './HeaderCartButton';
 import './Header.css';
 
-const Header = () => {
+const Header = (props) => {
   return (
     <React.Fragment>
       <header>
@@ -13,7 +13,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <HeaderCartButton />
+            <HeaderCartButton showCartOnClick = {props.onShow} />
           </Nav>
         </Navbar.Collapse>
       </Container>
